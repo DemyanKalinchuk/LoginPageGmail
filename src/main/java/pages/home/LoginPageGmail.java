@@ -17,7 +17,7 @@ public class LoginPageGmail extends BasePage {
     private By emailField = (By.id("identifierId"));
     private By passwordErrorMessage = By.xpath("//*[@name = 'identifierInput']/parent::div/div[1]//span");
     private By loginErrorMessage = By.xpath("//*[@type = 'password']/parent::div//span/parent::div");
-    private By successfulGmailAccess = By.id(":le");
+    private By successfulGmailAccess = By.xpath("//*[@data-tooltip='Входящие']");
 
     String passwordErrorMessageString = "Неправильний пароль. Повторіть спробу або натисніть \"Забули пароль?\", щоб скинути його.";
     String loginErrorMessageString = "Не вдалося знайти ваш обліковий запис Google";
